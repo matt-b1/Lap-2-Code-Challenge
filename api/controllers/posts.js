@@ -2,6 +2,7 @@ const Post = require('../models/Post');
 
 async function show (req, res) {
     try {
+        console.log(req.params.id)
         const post = await Post.findById(req.params.id)
         res.status(200).json(post);
     } catch (err) {
