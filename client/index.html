@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts</title>
     <link rel="stylesheet" href="./static/css/index.css">
-    <script src="./static/js/script.js"></script>
+
 </head>
     <body>
         <div class="card">
-            <div class="container" contenteditable="true">
-                <h2 placeholder="title" id="title" class="textholder">title</h2>
-                <p placeholder="author" id="author" class="textholder">author</p>
-                <p placeholder="content" id="content" class="textholder">content</p>
+            <form action="index.html">
+                <div class="container">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author">
+                    <label for="body">Content:</label>
+                    <input type="text" id="body" name="body">
+                </div>
                 <button id="create">Create</button>
-            </div>
+            </form>
         </div>
     </body>
 </html>

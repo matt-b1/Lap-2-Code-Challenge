@@ -1,0 +1,20 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+}
+
+.container {
+    position: relative;
+    padding: 21px 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
