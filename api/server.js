@@ -5,6 +5,10 @@ const cors = require('cors');
 server.use(cors());
 server.use(express.json());
 
-server.get('/', (req, res) => {res.send('Welcome to the library!')});
+const postsRoutes = require ('./routes/posts')
+
+server.use('/posts', postsRoutes)
+
+server.get('/', (req,res) => res.send('Index'))
 
 module.exports = server
