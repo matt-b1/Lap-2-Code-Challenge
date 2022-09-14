@@ -4,6 +4,5 @@ CREATE TABLE posts (
 	id serial PRIMARY KEY,
     title varchar(100) NOT NULL,
     author_name varchar(100) NOT NULL,
-    body text,
-    post_date varchar(100) 
+    body text
 );
