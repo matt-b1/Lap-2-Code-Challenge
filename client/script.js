@@ -3,10 +3,10 @@ const body = document.querySelector('body')
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
-    const options = {method : 'POST',headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      },
-      body: JSON.stringify(user)
+    const options = {
+        method : 'POST',
+        headers: { 'Content-Type': 'application/json;charset=utf-8'},
+        body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
     }
     fetch("http://localhost:3000/posts", options)
     .then(res => res.json())
