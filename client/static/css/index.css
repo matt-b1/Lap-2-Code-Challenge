@@ -1,0 +1,45 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+}
+
+.container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.body {
+    font-size: 20px;
+}
+
+#create {
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
